@@ -26,8 +26,6 @@ class AnimetsuScraper:
         self.download_path.mkdir(exist_ok=True)
         self.progress_queue = progress_queue
         self.binary_path = self._get_binary_path()
-        
-        # FIX: Instantiate the session BEFORE configuring its proxies
         self.session = c_requests.Session()
         self.session.proxies.update({"http": self.TOR_PROXY, "https": self.TOR_PROXY})
 
