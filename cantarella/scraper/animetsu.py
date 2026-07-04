@@ -9,7 +9,7 @@ import os
 from pathlib import Path
 
 class AnimetsuScraper:
-    BASE_URL = "https://animetsu.net"
+    BASE_URL = "https://animetsu.live"
     API_URL = f"{BASE_URL}/v2/api"
     PROXY_URL = "https://swiftstream.top/proxy" # Fallback if need_proxy is true
     TOR_PROXY = "socks5://127.0.0.1:9050"
